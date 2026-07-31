@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 # -----------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-model_path = os.path.join(BASE_DIR, "models", "model.pkl")
-le_path = os.path.join(BASE_DIR, "models", "label_encoder.pkl")
+model_path = "model.pkl"
+le_path = "label_encoder.pkl"
 
 model = pickle.load(open(model_path, "rb"))
 le = pickle.load(open(le_path, "rb"))
