@@ -13,8 +13,8 @@ st.set_page_config(page_title="Crop AI", page_icon="🌱", layout="wide")
 # LOAD MODEL
 # -----------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(BASE_DIR, "models", "model.pkl")
-le_path = os.path.join(BASE_DIR, "models", "label_encoder.pkl")
+model_path = os.path.join(BASE_DIR, "model.pkl")
+le_path = os.path.join(BASE_DIR, "label_encoder.pkl")
 
 try:
     model = pickle.load(open(model_path, "rb"))
